@@ -20,19 +20,13 @@ function specialKeyStyle() {
         }
         if (key.textContent === 'Ctrl') {
             key.classList.add(styleSet.ctrl);
-            key.setAttribute('data', 'Control');
         }
         if (key.textContent === 'Space') {
             key.classList.add(styleSet.space);
-            key.setAttribute('data', ' ')
         }
         if (key.textContent === 'Fn' || key.textContent === 'Alt' || key.textContent === 'Win' || key.textContent === '<=' || key.textContent === '=>' || key.textContent === 'Up') {
             key.classList.add(styleSet.func);
         }
-        if (key.textContent === 'Win'){
-            key.setAttribute('data', 'Meta');
-        }
-
     });
 }
 

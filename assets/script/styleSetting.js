@@ -14,7 +14,7 @@ const styleSet = {
     func: 'func',
     input: 'text',
     hidden: 'hidden',
-    hover: 'hover'
+    hover: 'hover',
 };
 
 export default styleSet;

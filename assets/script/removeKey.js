@@ -1,12 +1,10 @@
 import styleSet from "./styleSetting.js";
 
-function addHover() {
+function removeKey() {
     const collectionKey = document.querySelectorAll(`.${styleSet.key}`);
     [...collectionKey].forEach(key => {
-        if (event.code === key.getAttribute('data')) {
-            key.classList.add(styleSet.hover);
-        }
+        key.remove();
     });
 }
 
-export default addHover;
+export default removeKey;
