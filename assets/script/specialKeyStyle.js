@@ -9,7 +9,7 @@ function specialKeyStyle() {
         if (key.textContent === 'Tab') {
             key.classList.add(styleSet.tab);
         }
-        if (key.textContent === 'Caps Lock') {
+        if (key.textContent === 'CapsLock') {
             key.classList.add(styleSet.caps);
         }
         if (key.textContent === 'Enter') {
