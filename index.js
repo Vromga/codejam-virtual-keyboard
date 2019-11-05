@@ -15,3 +15,6 @@ function createElement(elem, insert, style) {
 
 createElement('input', 'body', styleSet.input);
 createElement('div', 'body', styleSet.body);
+
+const input = document.querySelector(`.${styleSet.input}`);
+input.setAttribute('placeholder', 'Click for up keyboard');
