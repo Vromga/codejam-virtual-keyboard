@@ -33,16 +33,16 @@ function keyboardInit() {
 
     bodyDocument.addEventListener('keydown', (event) => {
         addHover();
-        if(event.altKey){
+        if(event.ctrlKey){ //change lang
             removeKey();
             changeLang();
             specialKeyStyle();
+            addHover();
+            input.focus();
         }
 
     });
-    keyboard.addEventListener('keydown', (event) => {
 
-    });
     bodyDocument.addEventListener('keyup', (event) => {
         removeHover()
     });
