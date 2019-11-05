@@ -18,3 +18,18 @@ createElement('div', 'body', styleSet.body);
 
 const input = document.querySelector(`.${styleSet.input}`);
 input.setAttribute('placeholder', 'Click for up keyboard');
+
+const keyboard = document.querySelector(`.${styleSet.body}`);
+keyboard.classList.add(styleSet.hidden);
+
+function createKey(layout) {
+    const body = document.querySelector(`.${styleSet.body}`);
+    for (let i = 0; i < layout.length; i++) {
+        const key = document.createElement('button');
+        key.classList.add(styleSet.key);
+        key.textContent = layout[i];
+        body.insertAdjacentElement("beforeend", key);
+    }
+}
+
+createKey(ruLayout);
