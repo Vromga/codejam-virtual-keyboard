@@ -51,6 +51,22 @@ function keyboardInit() {
       input.value = out;
     }
   });
+
+  bodyDocument.addEventListener('mousedown', (event) => {
+    if (event.target.type === 'submit') {
+      event.target.classList.add(styleSet.hover);
+    }
+    if (event.target.textContent === 'Ctrl') { // change lang
+      removeKey();
+      changeLang();
+      specialKeyStyle();
+      event.target.classList.add(styleSet.hover);
+    }
+  });
+
+  bodyDocument.addEventListener('mouseup', () => {
+    removeHover();
+  });
 }
 
 keyboardInit();
