@@ -21,7 +21,7 @@ function specialKeyStyle() {
     if (key.textContent === 'Ctrl') {
       key.classList.add(styleSet.ctrl);
     }
-    if (key.textContent === 'Space') {
+    if (key.getAttribute('data') === 'Space') {
       key.classList.add(styleSet.space);
     }
     if (key.textContent === 'Fn' || key.textContent === 'Alt' || key.textContent === 'Win' || key.textContent === '<=' || key.textContent === '=>' || key.textContent === 'Up') {
