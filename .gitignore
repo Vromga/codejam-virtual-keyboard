@@ -70,3 +70,9 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 .gitignore
+
+
+.eslintrc.js
+node_modules/
+package-lock.json
+package.json
