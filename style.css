@@ -53,11 +53,6 @@ body {
   bottom: -100%;
 }
 
-.hover {
-  color: white;
-  background: silver;
-}
-
 .backspace {
   width: 110px;
   font-size: 1rem;
@@ -97,22 +92,22 @@ body {
   font-size: 1rem;
 }
 
-.up_down--up, .up_down--down {
-  margin: 0 0.5%;
-  display: block;
-  width: 50px;
-  height: 24px;
-  font-size: 1rem;
-  border: 0;
-  border-radius: 3px;
-}
-.up_down--up:hover, .up_down--down:hover {
-  cursor: pointer;
+.hover {
   color: white;
-  background: silver;
+  animation: shadow infinite 0.4s ease-in-out;
 }
-.up_down--up {
-  margin-bottom: 2px;
+
+@keyframes shadow {
+  from {
+    background-color: silver;
+    border-radius: 3px;
+    transform: scale(1);
+  }
+  to {
+    background-color: gold;
+    border-radius: 8px;
+    transform: scale(1.2);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
