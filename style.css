@@ -94,21 +94,19 @@ body {
 
 .hover {
   color: white;
-  animation: shadow infinite 0.2s ease-in-out;
+  animation: shadow infinite 0.4s ease-in-out;
 }
 
 @keyframes shadow {
   from {
     background-color: silver;
     border-radius: 3px;
-  }
-  50% {
-    background-color: green;
-    border-radius: 5px;
+    transform: scale(1);
   }
   to {
     background-color: gold;
     border-radius: 8px;
+    transform: scale(1.2);
   }
 }
 

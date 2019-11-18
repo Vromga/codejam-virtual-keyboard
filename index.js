@@ -44,18 +44,17 @@ function keyboardInit() {
     removeHover();
   });
 
-  bodyDocument.addEventListener('click', (event) => {
+  bodyDocument.addEventListener('mousedown', (event) => {
     if (event.target.textContent.length === 1) {
       out += event.target.textContent;
       input.value = '';
       input.value = out;
     }
-  });
 
-  bodyDocument.addEventListener('mousedown', (event) => {
     if (event.target.type === 'submit') {
       event.target.classList.add(styleSet.hover);
     }
+
     if (event.target.textContent === 'Ctrl') { // change lang
       removeKey();
       changeLang();
